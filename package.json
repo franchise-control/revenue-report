@@ -1,0 +1,51 @@
+{
+  "name": "revenue-report",
+  "version": "1.0.0",
+  "description": "Отчёт франчайзи о выручке: разбор периода и денежных сумм в том виде, в котором их присылают, проверка отчёта со списком всех ошибок сразу, разбор CSV-выгрузки.",
+  "keywords": [
+    "franchise",
+    "franchising",
+    "revenue",
+    "report",
+    "csv",
+    "отчёт",
+    "выручка",
+    "франшиза",
+    "франчайзинг",
+    "money-parsing"
+  ],
+  "homepage": "https://franchise-control.pro/upravlenie-franshizoy",
+  "bugs": "https://github.com/franchise-control/revenue-report/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franchise-control/revenue-report.git"
+  },
+  "license": "MIT",
+  "author": "Franchise Control <info@franchise-control.pro> (https://franchise-control.pro)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "sideEffects": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
