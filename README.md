@@ -160,13 +160,12 @@ npm run build
 российские площадки принимают те же коммиты:
 
 - GitHub: https://github.com/franchise-control/revenue-report
-- GitFlic: https://gitflic.ru/project/franchise-control/revenue-report
 - GitVerse: https://gitverse.ru/franchise-control/revenue-report
 
 Зеркало на российской площадке не прихоть: домен github.com в России не
 заблокирован, но доступность к нему плавает — в мае 2026 доля сбоев выросла
 с 4 % до 10–16 % при том, что регулятор блокировку отрицал. Если GitHub у вас
-не открывается, берите код с GitFlic или GitVerse: он тот же, вплоть до
+не открывается, берите код с GitVerse: он тот же, вплоть до
 хеша коммита.
 
 ## Откуда это
